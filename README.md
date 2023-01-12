@@ -135,4 +135,4 @@ Licensed under the [GPL-3][license] license.
 [issues-shield]: https://img.shields.io/github/issues/SonyaCore/Github-search-cli?style=flat
 [issues-url]: https://github.com/SonyaCore/Github-search-cli/issues
 [python3]: https://img.shields.io/badge/Python3-blue?logo=python
-[license]: LICENCE
+[license]: LICENSE
