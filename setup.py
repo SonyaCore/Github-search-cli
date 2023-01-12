@@ -1,12 +1,9 @@
-from os import path
 from setuptools import setup, find_packages
 
-DIR = path.dirname(path.realpath(__file__))
 NAME = "github-search-cli"
-VERSION = "0.3" 
-README = path.join(DIR, "README.md")
+VERSION = "0.4" 
 DESCRIPTION = "Github-search-cli"
-LONG_DESCRIPTION = open(README, "r", encoding="utf-8").read()
+LONG_DESCRIPTION = open('readme.md', "r", encoding="utf-8").read()
 
 setup(
         name=NAME, 
@@ -15,6 +12,7 @@ setup(
         author_email="sonyacore@protonmail.com",
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
+        long_description_content_type="text/markdown",
         packages=find_packages(),
         install_requires=['requests'],
     entry_points={
