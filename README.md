@@ -2,7 +2,7 @@
 
 ![python3]
 [![project-url](https://img.shields.io/pypi/status/github-search-cli)](https://pypi.org/pypi/github-search-cli/)
-![version](https://img.shields.io/pypi/v/github-search-cli)
+[![version](https://img.shields.io/pypi/v/github-search-cli)](https://pypi.org/pypi/github-search-cli/)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
