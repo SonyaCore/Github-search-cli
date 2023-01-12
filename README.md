@@ -53,6 +53,7 @@ python3 -m Github -h
 ```
 
 all the search queries for https://docs.github.com/en/rest/search is implemented on this python module
+
 list of available search queries
 `code,commits,issues,labels,repository,topics,users`
 
