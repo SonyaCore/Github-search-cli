@@ -1,16 +1,16 @@
 import argparse
 import sys
 
-from Search import Search
-from Timer import Timer
-from Utils import Color
-from Version import APP
+from .Search import Search
+from .Timer import Timer
+from .Utils import Color
+from .Version import APP
 
 formatter = lambda prog: argparse.HelpFormatter(prog, max_help_position=48)
 parser = argparse.ArgumentParser(formatter_class=formatter,add_help=False)
 parser.usage = (
     Color.Yellow
-    + sys.argv[0]
+    + "github"
     + Color.Reset
     + " "
     + "searchquery --query endpoint_query"
@@ -70,8 +70,7 @@ opt.add_argument("-h", "--help", action="help", help="show this help message and
 
 args = parser.parse_args()
 
-if __name__ == "__main__":
-
+def main():
     github = Search()
     timer = Timer()
 
@@ -153,3 +152,7 @@ if __name__ == "__main__":
         github.save(args.save, data)
 
     timer.stop()
+
+
+if __name__ == "__main__":
+    main()
