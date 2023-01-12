@@ -1,9 +1,12 @@
+from os import path
 from setuptools import setup, find_packages
 
+DIR = path.dirname(path.realpath(__file__))
 NAME = "github-search-cli"
 VERSION = "0.3" 
+README = path.join(DIR, "README.md")
 DESCRIPTION = "Github-search-cli"
-LONG_DESCRIPTION = "Github search rest api implementation written on python3"
+LONG_DESCRIPTION = open(README, "r", encoding="utf-8").read()
 
 setup(
         name=NAME, 
